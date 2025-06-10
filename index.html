@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body bgcolor="#D8BFD8"> 
+  <div class="container">
+      <h1 style="font-style: oblique">Formulario de Registro</h1>
+      
+<form id="formulario"><br>
+
+    <label for="Nombre:">Nombre</label>
+    <input type="text" id="nombre" required><br><br>
+    <label for="Apellidop:">Apellido Paterno</label>
+    <input type="text" id="Apellidop" required><br><br>
+    <label for="Apellidom:">Apellido Materno</label>
+    <input type="text" id="Apellidom" required><br><br>
+
+    
+    <label>Email</label>
+    <input type="email" placeholder="nombre@empresa.com"><br><br>
+    <label>Fecha de Nacimiento:</label>
+<input
+  type="date"
+  id="start"
+  name="start"
+  value="2025-07-22"
+  min="1900-01-01"
+  max="2025-12-31" />
+
+  <br><br>
+
+
+    <label>Telefono:</label>
+    <input type="text" id="localidad" name="localidad"><br><br>
+    <label>Localidad:</label>
+
+    <select name="select">
+        <option value="Cocula">Cocula</option>
+        <option value="Tateposco" selected>Tateposco</option>
+        <option value="El Barro">El Barro</option>
+        <option value="Camichines">Camichines</option>
+        <option value="Acatlan">Acatlan</option>
+        <option value="La Estansuela">La Estansuela</option>
+        <option value="Villa Corona">Villa Corona</option>
+        <option value="Estipac" selected>Estipac</option>
+        <option value="El Chibatillo">El Chibatillo</option>
+        <option value="El Borrego">El Borrego</option>
+      </select>
+      <br><br>
+    <label>Codigo Postal:</label>
+    <input type="text" id="cp" name="cp"><br><br>
+    <label>Usuario:</label>
+    <input type="text" id="usuario" name="usuario"><br><br>
+    <label>Contraseña:</label>
+
+<input type="contraseña" placeholder="*********">
+<br><br>
+    
+   
+    <fieldset>
+        <legend>sexo</legend>
+      <div>
+          <input type="radio" id="contactChoice1" name="contact" value="Hombre" />
+          <label for="contactChoice1">Hombre</label>
+    
+          <input type="radio" id="contactChoice2" name="contact" value="Mujer" />
+          <label for="contactChoice2">Mujer</label>
+    
+          <input type="radio" id="contactChoice3" name="contact" value="No Binario" />
+          <label for="contactChoice3">No Binario</label>
+        </div>
+
+      </fieldset>
+    
+ <br>
+ <label>Pasatiempos:</label>
+
+ <form method="post" action="/send/">
+    <input type="checkbox" name="username">
+    Dormir
+    <input type="checkbox" name="username">
+    Leer<br>
+    <input type="checkbox" name="username">
+    Video Juegos
+    <input type="checkbox" name="username">
+    Ver Peliculas<br>
+    <input type="checkbox" name="username">
+    Escuchar Musica
+    <input type="checkbox" name="username">
+    Pasear
+    <input type="checkbox" name="username">
+    Otro
+    <br>
+    <div class="buttons">
+      <br> <button type="button" onclick="mostrarDatos()">MOSTRAR</button>
+      <br> <button type="button" onclick="eliminarDatos()">ELIMINAR</button>
+    </div>
+
+      </form>
+  </form>
+  <div id="resultado"></div>
+</body>
+</html>
